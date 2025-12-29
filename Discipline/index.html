@@ -1,8 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>
-
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Survey </title>
 </head>
+<body>
+    <h1>Customer Feedback Survey</h1>
+    <p>Please take a moment to complete the survey below.</p>
+
+    <!-- Survey Form-->
+     <form action="#" method="post">
+        <!--Question 1 : Name-->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="age">Your age:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+
+        <label for="color">Favourite color:</label>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select><br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+     </form>
+
+     <!--Survey Response-->
+     <h2>Survey Response</h2>
+     <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favourite color</th>
+            <th>Feedback</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>30</td>
+            <td>Blue</td>
+            <td>Great Service!</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>25</td>
+            <td>Green</td>
+            <td>Would love to see more.</td>
+        </tr>
+     </table>
+</body>
 </html>
